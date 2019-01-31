@@ -79,7 +79,7 @@
   #mainNav.navbar-shrink .nav-link.active {
     color: #64a19d;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #FF8B00;
   }
 }
 
@@ -181,7 +181,7 @@
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #FF8B00;
   }
 }
 
@@ -195,7 +195,7 @@
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #FF8B00;
     border-width: .25rem;
     width: 30%;
   }
@@ -227,7 +227,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #FF8D00;
 }
 
 .contact-section .card h4 {
@@ -238,7 +238,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #FF8D00;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -271,7 +271,7 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: #FF8D00;
 }
 
 a:focus, a:hover {
