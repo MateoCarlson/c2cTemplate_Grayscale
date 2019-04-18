@@ -56,7 +56,7 @@
           <h1 class="text-white mx-auto my-0 text-uppercase">Overwatch League Rankings</h1>
           <h2 class="text-white mx-auto mt-2 mb-5">A free ranking site created by Mateo Carlson</h2>
           <h2 class="text-white mx-auto mt-2 mb-5">Support Me: twitch.tv/Matillion_Gaming</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Search for a Team</a>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">What is Overwatch League?</a>
         </div>
       </div>
     </header>
@@ -150,16 +150,23 @@
             <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
             <h2 class="text-white mb-5">Give me feedback!</h2>
 
-            <form class="form-inline d-flex">
-              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-10" id="inputEmail" placeholder="Enter email..." required>
-              <input type="name" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-10" id="inputFirstName" placeholder="Enter name..." required>
-              <input type="phoneNumber" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-10" id="inputPhoneNumber" placeholder="Enter phone..." required>
-              <input type="message" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMessage" placeholder="Enter your feedback..." required>
+            <form class="form-inline d-flex" action="{{ url_for('process_inputs') }}" method="post">
+              <input type="name" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-10" id="inputFirstName" name="inputFirstName" placeholder="Enter name..." required>
+              <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-10" id="inputEmail" name="inputEmail" placeholder="Enter email..." required>
+              <input type="phoneNumber" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-10" id="inputPhoneNumber" name="inputPhoneNumber" placeholder="Enter phone..." required>
+              <input type="message" class="form-control flex-fill mr-0 mr-sm-2 mb-5 mb-sm-0" id="inputMessage" name="inputMessage" placeholder="Enter your feedback..." required>
               <button type="submit" class="btn btn-primary mx-auto">Contact Me!</button>
             </form>
 
           </div>
         </div>
+
+        <h3 class="text-black mb-5 mt-5" align="center">.</h3>
+        <h3 class="text-black mb-5 mt-5" align="center">.</h3>
+        <p class="marginTop100 text-white"><h3 class="marginTop100 text-white mb-5" align="center">Why does this site exist?</h3></p>
+        <p class="text-white mb-4" align="center">I am part of a program called Code2College where high school students learn real world skills and programming languages. At the end of the course, students who qualify get an interview with a local tech company and a chance at a paid internship, further integrating the real life skilles learned in the program. In order to graduate, students are required to finish a "capstone project", which in my case is this website.</p>
+        <p class="text-white" align="center"><a href="https://code2college.org/" class="mx-2" target="_new">Find out more about the Code2College program by clicking here</a></p>
+
       </div>
     </section>
 
@@ -206,10 +213,10 @@
         </div>
 
         <div class="social d-flex justify-content-center">
-          <a href="https://twitter.com/matillion1" class="mx-2">
+          <a href="https://twitter.com/matillion1" class="mx-2" target="_new">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="https://github.com/MateoCarlson" class="mx-2">
+          <a href="https://github.com/MateoCarlson" class="mx-2" target="_new">
             <i class="fab fa-github"></i>
           </a>
         </div>
